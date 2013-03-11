@@ -1,0 +1,30 @@
+* { margin:0px; padding:0px }
+
+h1, h2, h3, h4, h5, h6 {font-weight: normal}
+
+body
+{
+    font-family: Helvetica, sans-serif;
+    background:#343434;
+    color:white;
+
+	margin:0 auto;
+    
+    width:1024px;
+}
+
+h1
+{
+	margin:4px 0px 12px 0px;	
+}
+
+canvas#game 
+{
+     background:black;
+     border:3px solid white;
+     display:block;
+}
+
+p {padding:6px;}
+
+#fps_box {text-align: right;}
