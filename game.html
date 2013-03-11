@@ -1,0 +1,35 @@
+<!DOCTYPE html> 
+<html>
+  <head>
+    <script src="lib/jaws.js"></script>
+	<script src="game.js"></script>
+    <link type="text/css" rel="stylesheet" href="style/style.css">
+    <title>Computer Club</title>
+  </head>
+<body>
+
+	<h1>My Game</h1>
+
+	<canvas width="1024" height="500" id="game"></canvas>
+	<p id="fps_box"><span id="fps"></span> fps.</p>
+	
+	<h2>Instructions</h2>
+	<p>Move with arrow keys, shoot with space.</p>
+  
+ 	<script>
+    /*
+		This waits for the page to finish loading,
+		loads in our graphics then starts the game!
+    */
+    jaws.onload = function()
+	{
+		jaws.unpack()
+		jaws.assets.bust_cache=true
+		jaws.assets.add(["graphics/ship.png", "graphics/bullet.png", "graphics/background-level-1.png"])
+		jaws.start(Game)
+    }
+	</script>
+
+</body>
+</html>
+
